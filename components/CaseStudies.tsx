@@ -83,7 +83,7 @@ interface ToggleBtnProps {
 }
 
 /*──────────────────────────────────────────────────────────────────
-  INDUSTRY BENCHMARKS — SOURCED & CITED
+  INDUSTRY BENCHMARKS SOURCED & CITED
 ──────────────────────────────────────────────────────────────────*/
 const BENCHMARKS = {
   apparelCTR:  { val: 1.26,  label: "Apparel CTR",            src: "Pixis 2025",         unit: "%" },
@@ -111,14 +111,14 @@ const YOY_INDUSTRY = [
 const clientA: ClientData = {
   name: "Client A",
   vertical: "Streetwear & Lifestyle",
-  tagline: "Curated Streetwear Boutique — Midwest US",
+  tagline: "Curated Streetwear Boutique Midwest US",
   heroStats: [
     { metric: "4.13x",  label: "Blended ROAS",    note: "+12% above industry median" },
     { metric: "$57.4K", label: "Revenue (30d)",    note: "On $13.9K ad spend" },
     { metric: "4.73x",  label: "Top PMax ROAS",   note: "+84% above PMax avg (2.57x)" },
     { metric: "26.3%",  label: "Brand Search CTR", note: "20x apparel avg (1.26%)" },
   ],
-  overview: "A curated streetwear and lifestyle boutique carrying premium athletic and independent labels across footwear, apparel, and accessories. Competing against Nike.com, SSENSE, END Clothing, and national DTC retailers on Google Shopping — the goal was to architect a profitable paid search program on a sub-$15K/month budget while defending branded queries and expanding into high-intent product categories.",
+  overview: "A curated streetwear and lifestyle boutique carrying premium athletic and independent labels across footwear, apparel, and accessories. Competing against Nike.com, SSENSE, END Clothing, and national DTC retailers on Google Shopping the goal was to architect a profitable paid search program on a sub-$15K/month budget while defending branded queries and expanding into high-intent product categories.",
   evolution: {
     title: "Account Architecture Evolution",
     phases: [
@@ -133,7 +133,7 @@ const clientA: ClientData = {
         era: "2022–2024",
         label: "PMax Migration & Restructure",
         campaigns: "Consolidated to 2 core PMax + 1 brand-specific PMax + Branded Search",
-        structure: "Migrated from 5 Smart Shopping campaigns to a tiered PMax architecture. Eliminated Display and YouTube as standalone campaigns — letting PMax serve cross-channel automatically. Introduced brand-level product segmentation (premium athletic brands isolated into dedicated asset groups).",
+        structure: "Migrated from 5 Smart Shopping campaigns to a tiered PMax architecture. Eliminated Display and YouTube as standalone campaigns letting PMax serve cross-channel automatically. Introduced brand-level product segmentation (premium athletic brands isolated into dedicated asset groups).",
         limitation: "Industry average saw 12% conversion value increase during Smart Shopping → PMax migration. This account exceeded that by consolidating fragmented campaigns into purpose-built PMax tiers.",
       },
       {
@@ -151,25 +151,25 @@ const clientA: ClientData = {
       {
         category: "Premium Athletic (Brand-Specific PMax)",
         approach: "Isolated high-AOV athletic brands into a dedicated PMax campaign with brand-specific audience signals. Search themes mapped to brand + model queries. Stripped competitor brand references from audience signals to avoid wasted impressions.",
-        result: "4.54x ROAS on $314 spend — 77% above PMax benchmark",
+        result: "4.54x ROAS on $314 spend 77% above PMax benchmark",
         roas: 4.54,
       },
       {
         category: "Core Catalog (Primary PMax)",
         approach: "Broad catch-all PMax covering full product feed. Listing groups segmented by product type with underperformers excluded at the SKU level. Audience signals built from first-party purchaser data + in-market apparel segments.",
-        result: "3.88x ROAS at scale — 877K impressions driving 177 conversions",
+        result: "3.88x ROAS at scale 877K impressions driving 177 conversions",
         roas: 3.88,
       },
       {
         category: "High-Intent Sales (PMax Sales Tier)",
         approach: "Promotional and sale-priced products funneled into a dedicated PMax campaign with aggressive tROAS targets. Custom labels used to dynamically rotate inventory based on markdown status and margin tier.",
-        result: "4.73x ROAS — best efficiency in account, +84% above PMax avg",
+        result: "4.73x ROAS best efficiency in account, +84% above PMax avg",
         roas: 4.73,
       },
       {
         category: "Branded Queries (Search Defense)",
         approach: "Exact and phrase match branded terms protecting against competitor conquest. Low CPC, high intent. Negative keywords preventing non-commercial brand queries from consuming budget.",
-        result: "26.3% CTR / 4.30x ROAS / $23.11 CPA — sub-$25 CPA target met",
+        result: "26.3% CTR / 4.30x ROAS / $23.11 CPA sub-$25 CPA target met",
         roas: 4.30,
       },
     ],
@@ -180,7 +180,7 @@ const clientA: ClientData = {
     pillars: [
       {
         name: "Brand Query Isolation",
-        detail: "Branded Search campaign captures all exact-match brand terms at 26.3% CTR. This prevents PMax from cannibalizing high-intent branded traffic — a common PMax failure point where branded queries inflate PMax ROAS while starving the rest of the account.",
+        detail: "Branded Search campaign captures all exact-match brand terms at 26.3% CTR. This prevents PMax from cannibalizing high-intent branded traffic a common PMax failure point where branded queries inflate PMax ROAS while starving the rest of the account.",
         impact: "Freed PMax to focus on non-branded product discovery while maintaining a reliable branded conversion floor.",
       },
       {
@@ -203,11 +203,11 @@ const clientA: ClientData = {
     { metric: "CPA",        client: "$38.73", industry: "$27.52 → rising +23% YoY",  delta: "Stable while industry CPA surged", positive: true },
     { metric: "Brand CTR",  client: "26.3%",  industry: "1.26% category avg",        delta: "20.9x category average",        positive: true },
   ],
-  insight: "This account tells the story of disciplined evolution: from 5 overlapping Smart Shopping campaigns in 2020 to a purpose-built 5-tier PMax architecture generating 4.13x ROAS. The brand-specific PMax segmentation proves that audience signal precision matters more than budget — a $314 micro-campaign delivered 4.54x ROAS by matching product-level search themes to high-intent brand shoppers.",
+  insight: "This account tells the story of disciplined evolution: from 5 overlapping Smart Shopping campaigns in 2020 to a purpose-built 5-tier PMax architecture generating 4.13x ROAS. The brand-specific PMax segmentation proves that audience signal precision matters more than budget a $314 micro-campaign delivered 4.54x ROAS by matching product-level search themes to high-intent brand shoppers.",
   campaigns: [
-    { name: "PMax — Primary Shopping", impressions: 877833, clicks: 10545, cost: 7890, conversions: 177, roas: 3.88, ctr: 1.20, aov: 170.19 },
-    { name: "PMax — Sales Tier",        impressions: 716875, clicks: 10660, cost: 5038, conversions: 156, roas: 4.73, ctr: 1.49, aov: 153.28 },
-    { name: "PMax — Brand Focus",       impressions: 28449,  clicks: 587,   cost: 314,  conversions: 11,  roas: 4.54, ctr: 2.06, aov: 126.18 },
+    { name: "PMax Primary Shopping", impressions: 877833, clicks: 10545, cost: 7890, conversions: 177, roas: 3.88, ctr: 1.20, aov: 170.19 },
+    { name: "PMax Sales Tier",        impressions: 716875, clicks: 10660, cost: 5038, conversions: 156, roas: 4.73, ctr: 1.49, aov: 153.28 },
+    { name: "PMax Brand Focus",       impressions: 28449,  clicks: 587,   cost: 314,  conversions: 11,  roas: 4.54, ctr: 2.06, aov: 126.18 },
     { name: "Branded Search",           impressions: 1937,   clicks: 509,   cost: 244,  conversions: 11,  roas: 4.30, ctr: 26.28, aov: 99.28 },
   ],
   accentColor: "#c9a96e",
@@ -218,7 +218,7 @@ const clientA: ClientData = {
 const clientB: ClientData = {
   name: "Client B",
   vertical: "Sneakers & Streetwear",
-  tagline: "Premium Sneaker & Streetwear Retailer — Midwest US",
+  tagline: "Premium Sneaker & Streetwear Retailer Midwest US",
   heroStats: [
     { metric: "5.27x",   label: "Blended ROAS",         note: "+43% above industry median" },
     { metric: "$102.5K", label: "Revenue (30d)",         note: "On $19.4K ad spend" },
@@ -240,7 +240,7 @@ const clientB: ClientData = {
         era: "Restructure Phase",
         label: "PMax Segmentation + Competitive Layer",
         campaigns: "PMax Women's + PMax Competitors + Shopping Catch-All + Brand Search",
-        structure: "Introduced three strategic layers: a dedicated women's PMax campaign (new audience expansion), a competitor-conquest PMax campaign (market share capture), and a Standard Shopping catch-all (long-tail safety net). Each PMax uses distinct audience signals — the competitor campaign targets rival brand shoppers, the women's campaign uses in-market + affinity signals for women's streetwear.",
+        structure: "Introduced three strategic layers: a dedicated women's PMax campaign (new audience expansion), a competitor-conquest PMax campaign (market share capture), and a Standard Shopping catch-all (long-tail safety net). Each PMax uses distinct audience signals the competitor campaign targets rival brand shoppers, the women's campaign uses in-market + affinity signals for women's streetwear.",
         limitation: "This hybrid PMax + Standard Shopping approach aligns with the 2025 industry shift where PMax cost share has dropped ~6% as advertisers reclaim control with Standard Shopping alongside PMax.",
       },
       {
@@ -248,7 +248,7 @@ const clientB: ClientData = {
         label: "Full-Funnel Hybrid Architecture",
         campaigns: "4 active campaigns generating $102.5K revenue at 5.27x blended ROAS",
         structure: "Mature four-pillar system: Women's PMax (audience expansion), Competitor PMax (market share), Shopping Catch-All (long-tail capture), and Brand (defense). Each layer serves a distinct role in the funnel and uses isolated audience signals to prevent overlap.",
-        limitation: "Outperforming 93% of the industry — while median ROAS dropped to 3.68x and PMax avg sits at 2.57x, this account delivers 5.27x blended and 5.89x on competitive conquest.",
+        limitation: "Outperforming 93% of the industry while median ROAS dropped to 3.68x and PMax avg sits at 2.57x, this account delivers 5.27x blended and 5.89x on competitive conquest.",
       },
     ],
   },
@@ -256,48 +256,48 @@ const clientB: ClientData = {
     title: "Product Categorization & Market Expansion",
     segments: [
       {
-        category: "Women's Expansion (PMax — New Market)",
-        approach: "Built an entirely new PMax campaign targeting the women's sneaker and streetwear segment — a market Client B hadn't actively pursued. Audience signals built from in-market women's footwear + fashion affinity segments. Feed segmented by gender to ensure only women's products appear. Search themes mapped to women's-specific style and brand queries.",
-        result: "1.3M impressions / 226 conversions / 5.46x ROAS — proving the new market is highly profitable",
+        category: "Women's Expansion (PMax New Market)",
+        approach: "Built an entirely new PMax campaign targeting the women's sneaker and streetwear segment a market Client B hadn't actively pursued. Audience signals built from in-market women's footwear + fashion affinity segments. Feed segmented by gender to ensure only women's products appear. Search themes mapped to women's-specific style and brand queries.",
+        result: "1.3M impressions / 226 conversions / 5.46x ROAS proving the new market is highly profitable",
         roas: 5.46,
       },
       {
-        category: "Competitive Conquest (PMax — Market Share)",
+        category: "Competitive Conquest (PMax Market Share)",
         approach: "Dedicated competitor-targeting campaign using audience signals built from rival brand URLs, competitor brand keyword segments, and in-market sneaker buyer lists. This campaign exists solely to capture shoppers actively browsing competitor sites and convert them to Client B.",
-        result: "5.89x ROAS — best in account, +129% above PMax benchmark. 131 conversions from conquest traffic at $33.65 CPA.",
+        result: "5.89x ROAS best in account, +129% above PMax benchmark. 131 conversions from conquest traffic at $33.65 CPA.",
         roas: 5.89,
       },
       {
         category: "Long-Tail Catalog (Standard Shopping)",
-        approach: "Standard Shopping catch-all covering the full product feed. Acts as a safety net for queries PMax doesn't capture — particularly long-tail, model-specific, and size-specific product queries. Provides granular search term data that PMax lacks, informing negative keyword strategy and audience signal refinement across the account.",
-        result: "4.94x ROAS at 867K impressions — near-5x return on the broadest campaign in the account",
+        approach: "Standard Shopping catch-all covering the full product feed. Acts as a safety net for queries PMax doesn't capture particularly long-tail, model-specific, and size-specific product queries. Provides granular search term data that PMax lacks, informing negative keyword strategy and audience signal refinement across the account.",
+        result: "4.94x ROAS at 867K impressions near-5x return on the broadest campaign in the account",
         roas: 4.94,
       },
       {
         category: "Brand Defense (Search)",
         approach: "Exact and phrase match branded search terms. Extremely high-intent, minimal budget. Defends against competitor conquest attempts on brand terms. Monitored for auction insight competitor activity.",
-        result: "7.82x ROAS / 23.4% CTR — highest efficiency, lowest spend, maximum defensive value",
+        result: "7.82x ROAS / 23.4% CTR highest efficiency, lowest spend, maximum defensive value",
         roas: 7.82,
       },
     ],
   },
   keywordStrategy: {
     title: "Competitive Conquest & Keyword Strategy",
-    narrative: "The centerpiece of this account is the competitive conquest strategy. Rather than bidding directly on competitor brand terms (expensive and often low-converting in Search), we use PMax audience signals to target users who are actively in the competitor ecosystem — letting Google's cross-channel AI find them across Shopping, YouTube, Display, and Discovery.",
+    narrative: "The centerpiece of this account is the competitive conquest strategy. Rather than bidding directly on competitor brand terms (expensive and often low-converting in Search), we use PMax audience signals to target users who are actively in the competitor ecosystem letting Google's cross-channel AI find them across Shopping, YouTube, Display, and Discovery.",
     pillars: [
       {
         name: "Audience-Signal Conquest (vs. Keyword Conquest)",
-        detail: "Traditional competitor bidding targets brand terms in Search — expensive CPCs, low CTR, legal gray areas. Our approach uses PMax audience signals: competitor website URLs as custom segments, competitor brand keyword lists as intent signals, and in-market footwear + sneaker audiences. The algorithm finds these users wherever they are in Google's ecosystem.",
-        impact: "5.89x ROAS on conquest traffic — more than double the PMax avg. This approach outperforms traditional keyword-based conquest by reaching users across all surfaces, not just Search.",
+        detail: "Traditional competitor bidding targets brand terms in Search expensive CPCs, low CTR, legal gray areas. Our approach uses PMax audience signals: competitor website URLs as custom segments, competitor brand keyword lists as intent signals, and in-market footwear + sneaker audiences. The algorithm finds these users wherever they are in Google's ecosystem.",
+        impact: "5.89x ROAS on conquest traffic more than double the PMax avg. This approach outperforms traditional keyword-based conquest by reaching users across all surfaces, not just Search.",
       },
       {
         name: "Women's Market Search Theme Architecture",
         detail: "The women's PMax campaign uses gender-specific search themes: women's sneakers, women's streetwear brands, women's athletic lifestyle. Feed is gender-segmented so only women's products appear. Audience signals layer in-market footwear with women's fashion affinity to capture the intersection of style and sport.",
-        impact: "Scaled to 1.3M impressions in a market the brand hadn't previously targeted — proving addressable audience size exists for this segment.",
+        impact: "Scaled to 1.3M impressions in a market the brand hadn't previously targeted proving addressable audience size exists for this segment.",
       },
       {
         name: "Standard Shopping as Intelligence Layer",
-        detail: "The Shopping catch-all isn't just a backup campaign — it's the account's intelligence engine. Because Standard Shopping provides full search term reports (which PMax does not), it reveals which product-specific and long-tail queries drive conversions. These insights inform PMax search themes, audience signal refinement, and negative keyword deployment across the account.",
+        detail: "The Shopping catch-all isn't just a backup campaign it's the account's intelligence engine. Because Standard Shopping provides full search term reports (which PMax does not), it reveals which product-specific and long-tail queries drive conversions. These insights inform PMax search themes, audience signal refinement, and negative keyword deployment across the account.",
         impact: "4.94x ROAS while also generating the data that powers the entire account's optimization loop.",
       },
     ],
@@ -310,11 +310,11 @@ const clientB: ClientData = {
     { metric: "Conquest CPA",   client: "$33.65", industry: "$27.52 median (↑23% YoY)", delta: "Competitive on conquest traffic", positive: true },
     { metric: "Brand CTR",      client: "23.4%",  industry: "1.26% category avg",       delta: "18.5x category average",       positive: true },
   ],
-  insight: "The competitive conquest PMax is the case study within the case study: by replacing traditional keyword-level competitor bidding with audience-signal-based conquest through PMax, we converted rival brand shoppers at 5.89x ROAS — in a year where industry-wide ROAS dropped 10%. The women's expansion proves that product-level PMax segmentation can open entirely new addressable markets at scale (1.3M impressions) without sacrificing efficiency (5.46x ROAS).",
+  insight: "The competitive conquest PMax is the case study within the case study: by replacing traditional keyword-level competitor bidding with audience-signal-based conquest through PMax, we converted rival brand shoppers at 5.89x ROAS in a year where industry-wide ROAS dropped 10%. The women's expansion proves that product-level PMax segmentation can open entirely new addressable markets at scale (1.3M impressions) without sacrificing efficiency (5.46x ROAS).",
   campaigns: [
-    { name: "PMax — Women's Expansion",    impressions: 1305102, clicks: 14965, cost: 8149, conversions: 226, roas: 5.46, ctr: 1.15, aov: 196.70 },
-    { name: "Shopping — Catch-All",        impressions: 866951,  clicks: 11037, cost: 5982, conversions: 146, roas: 4.94, ctr: 1.27, aov: 202.36 },
-    { name: "PMax — Competitor Conquest",  impressions: 508258,  clicks: 7432,  cost: 4419, conversions: 131, roas: 5.89, ctr: 1.46, aov: 198.48 },
+    { name: "PMax Women's Expansion",    impressions: 1305102, clicks: 14965, cost: 8149, conversions: 226, roas: 5.46, ctr: 1.15, aov: 196.70 },
+    { name: "Shopping Catch-All",        impressions: 866951,  clicks: 11037, cost: 5982, conversions: 146, roas: 4.94, ctr: 1.27, aov: 202.36 },
+    { name: "PMax Competitor Conquest",  impressions: 508258,  clicks: 7432,  cost: 4419, conversions: 131, roas: 5.89, ctr: 1.46, aov: 198.48 },
     { name: "Brand Defense",               impressions: 1798,    clicks: 420,   cost: 255,  conversions: 12,  roas: 7.82, ctr: 23.36, aov: 167.50 },
   ],
   accentColor: "#6ea4c9",
@@ -1036,7 +1036,7 @@ export default function CaseStudies() {
       }}
     >
       <div style={{ maxWidth: 920, margin: "0 auto" }}>
-        {/* PAGE HEADER — iOS Finder breadcrumb style */}
+        {/* PAGE HEADER iOS Finder breadcrumb style */}
         <div style={{ marginBottom: 56, maxWidth: 680 }}>
           <div
             style={{
@@ -1087,9 +1087,9 @@ export default function CaseStudies() {
             borderRadius: 14,
           }}
         >
-          <SectionLabel>Outperforming a Declining Market — 2025 YoY Context</SectionLabel>
+          <SectionLabel>Outperforming a Declining Market 2025 YoY Context</SectionLabel>
           <p style={{ fontFamily: serif, fontSize: 13, color: "#888", lineHeight: 1.65, marginTop: 0, marginBottom: 18 }}>
-            Google Ads performance across fashion verticals declined meaningfully in 2025 — rising
+            Google Ads performance across fashion verticals declined meaningfully in 2025 rising
             costs, falling conversion rates, and compressed ROAS industry-wide. Both accounts below
             bucked every major trend.
           </p>

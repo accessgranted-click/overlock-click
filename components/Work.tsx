@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     channel: "Meta Ads",
     headline: "Limited drop sold out in 72 hours.",
     detail:
-      "Hyperlocal targeting across three metro markets drove simultaneous foot traffic and online conversion. A full creative sequence from teaser to drop day — CPM fell 62% mid-flight as the algorithm refined its audience.",
+      "Hyperlocal targeting across three metro markets drove foot traffic and online conversions simultaneously. We built a full creative sequence from teaser to drop day. CPM fell 62% as the algorithm refined its audience.",
     stat: "4.2×",
     statLabel: "ROAS",
     accent: "emerald",
@@ -33,7 +33,7 @@ const caseStudies: CaseStudy[] = [
     channel: "Google Ad Grants",
     headline: "Donation conversion increased fivefold.",
     detail:
-      "Mission-aligned keyword strategy and compliant $10k/month Grant management. Average CPC of $0.22 — sustained, scalable, built for the long run.",
+      "Mission-aligned keyword strategy paired with compliant $10k/month Grant management. Average CPC of $0.22. Sustained, scalable, and built for the long run.",
     stat: "5×",
     statLabel: "Conversion rate",
     accent: "ember",
@@ -44,7 +44,7 @@ const caseStudies: CaseStudy[] = [
     channel: "SEM + Meta",
     headline: "First profitable paid channel in brand history.",
     detail:
-      "Full-funnel build from zero: Google Shopping and Meta retargeting that turned a brand with no paid history into a compounding performance program.",
+      "Full-funnel build from zero. Google Shopping and Meta retargeting turned a brand with no paid history into a compounding performance program.",
     stat: "38%",
     statLabel: "YoY revenue growth",
     accent: "emerald",
@@ -73,7 +73,7 @@ export default function Work() {
               className="font-grotesk font-bold text-bone tracking-tight"
               style={{ fontSize: "clamp(2.2rem, 5vw, 4rem)" }}
             >
-              Results that speak.
+              Proven results.
             </motion.h2>
           </div>
           <a

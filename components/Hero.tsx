@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="text-xs font-sans uppercase tracking-[0.22em] text-slate mb-10"
         >
-          Paid Search &amp; Social
+          Paid Search and Social
         </motion.p>
 
         {/* Headline */}
@@ -59,8 +59,8 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="max-w-[42ch] text-base lg:text-lg text-slate font-sans leading-relaxed mb-12"
         >
-          Performance advertising for independent retailers and nonprofits.
-          Google Search, Shopping, and Meta — built to grow with your business.
+          We run Google and Meta campaigns for independent retailers and nonprofits.
+          Every campaign is built to generate measurable, compounding returns.
         </motion.p>
 
         {/* CTA */}

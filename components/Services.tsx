@@ -17,7 +17,7 @@ const services: Service[] = [
     id: "sem",
     title: "Search Engine Marketing",
     description:
-      "Google Ads built for local impact — from Ad Grants for nonprofits to Shopping and Search for independent retailers. Every campaign is architected around a single goal: profitable, scalable growth.",
+      "Google Ads campaigns built for local impact. From Ad Grants for nonprofits to Shopping and Search for independent retailers, every campaign is built around one goal: profitable, scalable growth.",
     stats: [
       { value: "$0.22", label: "Average CPC (Grants)" },
       { value: "8.1×", label: "Average ROAS" },
@@ -28,7 +28,7 @@ const services: Service[] = [
     id: "meta",
     title: "Meta Advertising",
     description:
-      "Instagram and Facebook campaigns that move inventory and build community. Creative strategy combined with precision targeting — turning browsers into buyers, and followers into donors.",
+      "Instagram and Facebook campaigns that move inventory and build community. Creative strategy paired with precision targeting turns browsers into buyers and followers into donors.",
     stats: [
       { value: "4.2×", label: "Average ROAS" },
       { value: "62%", label: "CPM reduction" },
@@ -72,7 +72,7 @@ export default function Services() {
             </motion.h2>
           </div>
           <p className="text-slate text-sm font-sans max-w-[30ch] leading-relaxed">
-            We focus on the channels that move the needle for independent brands — nothing else.
+            We focus on the channels that move the needle for independent brands. Nothing else.
           </p>
         </div>
 
