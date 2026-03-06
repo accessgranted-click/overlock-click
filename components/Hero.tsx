@@ -48,9 +48,9 @@ export default function Hero() {
           aria-label="We lock in the clicks."
         >
           {headlineWords.map((word, i) => (
-            <div key={word} className="overflow-hidden">
+            <div key={word}>
               <motion.span
-                initial={{ y: "100%" }}
+                initial={{ y: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
                   delay: 0.4 + i * 0.13,
