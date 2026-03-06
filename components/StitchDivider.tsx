@@ -5,7 +5,7 @@ interface StitchDividerProps {
 }
 
 export default function StitchDivider({
-  stroke = "#1C1C28",
+  stroke = "#17171E",
   strokeOpacity = 1,
   position = "bottom",
 }: StitchDividerProps) {

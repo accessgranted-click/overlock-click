@@ -4,12 +4,12 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink border-t border-mid py-7">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="bg-smoke border-t border-white/6 py-8">
+      <div className="max-w-6xl mx-auto px-8 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
         <Wordmark className="text-sm" />
 
         <p className="text-slate text-xs font-sans text-center order-last sm:order-none">
-          © {year} overlock.click — All rights reserved
+          © {year} overlock.click
         </p>
 
         <a

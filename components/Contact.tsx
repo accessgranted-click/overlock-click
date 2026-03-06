@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import StitchDivider from "@/components/StitchDivider";
 import { useScrollIntoView } from "@/hooks/useScrollIntoView";
 
 export default function Contact() {
@@ -11,73 +10,49 @@ export default function Contact() {
     <section
       id="contact"
       ref={ref}
-      className="bg-volt py-24 lg:py-36 relative overflow-hidden"
+      className="bg-ink py-28 lg:py-40 border-t border-white/8"
     >
-      <StitchDivider stroke="#0A0A0F" strokeOpacity={0.12} position="top" />
+      <div className="max-w-6xl mx-auto px-8 lg:px-12">
+        <p className="text-xs font-sans uppercase tracking-[0.22em] text-slate mb-8">
+          Contact
+        </p>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Eyebrow */}
-        <motion.div
-          initial={{}}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.5 }}
-          className="flex items-center gap-3 text-xs font-sans uppercase tracking-[0.2em] text-ink/50 mb-6"
-        >
-          <span aria-hidden="true" className="inline-block w-6 h-px bg-ink/25" />
-          Let&apos;s connect
-        </motion.div>
-
-        {/* Main heading */}
         <motion.h2
-          initial={{ y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.1, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-grotesk font-bold text-ink tracking-tighter leading-[0.9] mb-10"
-          style={{ fontSize: "clamp(3rem, 9vw, 8rem)" }}
+          initial={{ y: 0 }}
+          animate={{ y: 0 }}
+          className="font-grotesk font-bold text-bone tracking-tight leading-[0.9] mb-12"
+          style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
         >
-          Let&apos;s work.
+          Ready to grow?
         </motion.h2>
 
-        {/* Email link */}
-        <motion.a
-          initial={{ y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.3, duration: 0.6 }}
+        <a
           href="mailto:hello@overlock.click"
-          className="group inline-flex items-center gap-4 font-grotesk font-semibold text-ink hover:text-ink/60 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/30 rounded-sm"
-          style={{ fontSize: "clamp(1.25rem, 4vw, 3rem)" }}
+          className="group inline-flex items-center gap-3 font-grotesk font-semibold text-bone hover:text-emerald transition-colors duration-200"
+          style={{ fontSize: "clamp(1.1rem, 3vw, 2.5rem)" }}
         >
           hello@overlock.click
           <span
             aria-hidden="true"
-            className="inline-block text-[0.8em] group-hover:translate-x-2 group-hover:-translate-y-1 transition-transform duration-200"
+            className="inline-block group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200"
           >
             ↗
           </span>
-        </motion.a>
+        </a>
 
-        {/* Founder card */}
-        <motion.div
-          initial={{}}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.55, duration: 0.6 }}
-          className="mt-16 pt-8 border-t border-ink/15 flex items-center gap-4"
-        >
+        {/* Founder */}
+        <div className="mt-20 pt-10 border-t border-white/6 flex items-center gap-4">
           <div
             aria-hidden="true"
-            className="w-10 h-10 rounded-full bg-ink/8 border border-ink/12 flex items-center justify-center font-grotesk font-semibold text-ink text-sm select-none flex-shrink-0"
+            className="w-9 h-9 rounded-full bg-white/6 border border-white/8 flex items-center justify-center font-grotesk font-semibold text-bone text-xs select-none flex-shrink-0"
           >
             GW
           </div>
           <div>
-            <div className="font-grotesk font-semibold text-ink text-sm">
-              Grant Wuerslin
-            </div>
-            <div className="font-sans text-ink/50 text-xs mt-0.5">
-              Founder, overlock.click
-            </div>
+            <div className="font-grotesk font-medium text-bone text-sm">Grant Wuerslin</div>
+            <div className="font-sans text-slate text-xs mt-0.5">Founder, overlock.click</div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

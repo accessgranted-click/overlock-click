@@ -1,16 +1,16 @@
-export type AccentColor = "volt" | "mango";
+export type AccentColor = "emerald" | "ember";
 
 export const accentMap = {
-  volt: {
-    text: "text-volt",
-    dot: "bg-volt",
-    bg: "bg-volt/5",
-    badge: "bg-volt/10 text-volt",
+  emerald: {
+    text: "text-emerald",
+    dot: "bg-emerald",
+    bg: "bg-emerald/5",
+    badge: "bg-emerald/10 text-emerald",
   },
-  mango: {
-    text: "text-mango",
-    dot: "bg-mango",
-    bg: "bg-mango/5",
-    badge: "bg-mango/10 text-mango",
+  ember: {
+    text: "text-ember",
+    dot: "bg-ember",
+    bg: "bg-ember/5",
+    badge: "bg-ember/10 text-ember",
   },
 } as const;
