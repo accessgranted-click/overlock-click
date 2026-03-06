@@ -61,7 +61,7 @@ export default function Work() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-6 border-b border-white/6 gap-4">
           <div>
             <motion.p
-              initial={{ opacity: 0 }}
+              initial={{}}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.4 }}
               className="text-xs font-sans uppercase tracking-[0.18em] text-slate/50 mb-2"
@@ -69,7 +69,7 @@ export default function Work() {
               overlock.click&nbsp;/&nbsp;work
             </motion.p>
             <motion.h2
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
               className="font-grotesk font-bold text-bone tracking-tight"
@@ -80,7 +80,7 @@ export default function Work() {
           </div>
           <motion.a
             href="/work"
-            initial={{ opacity: 0 }}
+            initial={{}}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/8 text-slate text-xs font-sans hover:text-bone hover:bg-white/10 hover:border-white/14 transition-all duration-200 self-start sm:self-auto"
@@ -94,7 +94,7 @@ export default function Work() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
           {/* Featured card — spans 2 columns */}
           <motion.article
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-2 bg-mid/70 backdrop-blur-sm rounded-3xl border border-white/8 p-8 lg:p-10 overflow-hidden hover:border-white/14 hover:bg-mid/90 transition-all duration-300"
@@ -107,7 +107,7 @@ export default function Work() {
             {caseStudies.slice(1).map((study, i) => (
               <motion.article
                 key={study.client}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{
                   delay: 0.38 + i * 0.14,
@@ -124,7 +124,7 @@ export default function Work() {
 
         {/* iOS Finder-style status bar */}
         <motion.p
-          initial={{ opacity: 0 }}
+          initial={{}}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.75, duration: 0.5 }}
           className="mt-5 text-xs font-sans text-slate/40 tracking-wide"

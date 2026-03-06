@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
         {/* Eyebrow */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{}}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5 }}
           className="flex items-center gap-3 text-xs font-sans uppercase tracking-[0.2em] text-ink/50 mb-6"
@@ -29,7 +29,7 @@ export default function Contact() {
 
         {/* Main heading */}
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="font-grotesk font-bold text-ink tracking-tighter leading-[0.9] mb-10"
@@ -40,7 +40,7 @@ export default function Contact() {
 
         {/* Email link */}
         <motion.a
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}
           href="mailto:hello@overlock.click"
@@ -58,7 +58,7 @@ export default function Contact() {
 
         {/* Founder card */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{}}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.55, duration: 0.6 }}
           className="mt-16 pt-8 border-t border-ink/15 flex items-center gap-4"

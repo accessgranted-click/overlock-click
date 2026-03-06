@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-20">
         {/* Eyebrow — iOS system tag style */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
           className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/6 border border-white/10 mb-10"
@@ -50,7 +50,7 @@ export default function Hero() {
           {headlineWords.map((word, i) => (
             <div key={word} className="overflow-hidden">
               <motion.span
-                initial={{ y: "100%", opacity: 0 }}
+                initial={{ y: "100%" }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
                   delay: 0.4 + i * 0.13,
@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Subtext */}
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.6 }}
           className="max-w-[38ch] text-base lg:text-lg text-slate font-sans leading-relaxed mb-10"
@@ -81,7 +81,7 @@ export default function Hero() {
 
         {/* Tags + CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.05, duration: 0.6 }}
           className="flex flex-wrap items-center gap-3"
@@ -102,7 +102,7 @@ export default function Hero() {
 
         {/* iOS Finder-style stats bar */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{}}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.7 }}
           className="mt-16 pt-5 border-t border-white/6 flex items-center gap-8"
@@ -122,7 +122,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{}}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 0.6 }}
         className="absolute bottom-8 left-6 lg:left-10 flex items-center gap-2 text-slate text-xs font-sans"

@@ -56,7 +56,7 @@ export default function Services() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-6 border-b border-white/6 gap-4">
           <div>
             <motion.p
-              initial={{ opacity: 0 }}
+              initial={{}}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.4 }}
               className="text-xs font-sans uppercase tracking-[0.18em] text-slate/50 mb-2"
@@ -64,7 +64,7 @@ export default function Services() {
               overlock.click&nbsp;/&nbsp;services
             </motion.p>
             <motion.h2
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
               className="font-grotesk font-bold text-bone tracking-tight"
@@ -74,7 +74,7 @@ export default function Services() {
             </motion.h2>
           </div>
           <motion.p
-            initial={{ opacity: 0 }}
+            initial={{}}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-slate/60 text-xs font-sans uppercase tracking-[0.18em]"
@@ -90,7 +90,7 @@ export default function Services() {
             return (
               <motion.div
                 key={service.id}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 + i * 0.15, duration: 0.65 }}
                 className={`group relative bg-mid/70 backdrop-blur-sm rounded-3xl border border-white/8 p-8 lg:p-10 overflow-hidden hover:border-white/14 hover:bg-mid/90 transition-all duration-300 ${colors.bg}`}
@@ -151,7 +151,7 @@ export default function Services() {
           {features.map((feature, i) => (
             <motion.div
               key={feature.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.55 + i * 0.1, duration: 0.5 }}
               className="bg-mid/50 backdrop-blur-sm rounded-2xl border border-white/6 px-6 py-4 flex items-center gap-4"
