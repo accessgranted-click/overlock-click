@@ -8,7 +8,6 @@ interface Service {
   id: string;
   title: string;
   description: string;
-  stats: { value: string; label: string }[];
   accent: AccentColor;
 }
 
@@ -18,21 +17,13 @@ const services: Service[] = [
     title: "Search Engine Marketing",
     description:
       "Google Ads campaigns built for local impact. From Ad Grants for nonprofits to Shopping and Search for independent retailers, every campaign is built around one goal: profitable, scalable growth.",
-    stats: [
-      { value: "$0.22", label: "Average CPC (Grants)" },
-      { value: "8.1×", label: "Average ROAS" },
-    ],
     accent: "emerald",
   },
   {
     id: "meta",
     title: "Meta Advertising",
     description:
-      "Instagram and Facebook campaigns that move inventory and build community. Creative strategy paired with precision targeting turns browsers into buyers and followers into donors.",
-    stats: [
-      { value: "4.2×", label: "Average ROAS" },
-      { value: "62%", label: "CPM reduction" },
-    ],
+      "Instagram and Facebook campaigns that put your brand in front of the right people at the right time. We handle creative strategy, audience targeting, and ongoing optimization — so your budget works harder every week.",
     accent: "ember",
   },
 ];
@@ -92,23 +83,9 @@ export default function Services() {
                   </span>
                 </div>
 
-                <p className="text-bone/80 font-sans leading-relaxed text-sm lg:text-base mb-10">
+                <p className="text-bone/80 font-sans leading-relaxed text-sm lg:text-base">
                   {service.description}
                 </p>
-
-                <div className="flex gap-0 pt-8 border-t border-white/6">
-                  {service.stats.map((stat, i) => (
-                    <div
-                      key={stat.label}
-                      className={`flex-1 ${i > 0 ? "pl-8 border-l border-white/6" : "pr-8"}`}
-                    >
-                      <div className={`text-3xl font-grotesk font-bold tracking-tight ${colors.text}`}>
-                        {stat.value}
-                      </div>
-                      <div className="text-xs font-sans text-slate mt-1.5">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
               </div>
             );
           })}

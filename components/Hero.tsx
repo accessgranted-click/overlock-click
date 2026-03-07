@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import StitchDivider from "@/components/StitchDivider";
 
-const heroStats = [
-  { value: "4.2×", label: "Average ROAS" },
-  { value: "$0.22", label: "Average CPC" },
-  { value: "5×", label: "Donation conversion" },
-];
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-ink flex flex-col justify-center overflow-hidden">
@@ -77,28 +71,11 @@ export default function Hero() {
             Get in touch
           </a>
           <a
-            href="#work"
+            href="/work"
             className="text-sm font-sans text-slate hover:text-bone transition-colors duration-200"
           >
-            View our work →
+            See our results →
           </a>
-        </motion.div>
-
-        {/* Stats bar */}
-        <motion.div
-          initial={{ y: 0 }}
-          animate={{ y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="mt-20 pt-8 border-t border-white/8 flex flex-wrap gap-10"
-        >
-          {heroStats.map((stat) => (
-            <div key={stat.label}>
-              <div className="font-grotesk font-bold text-emerald text-2xl tracking-tight leading-none">
-                {stat.value}
-              </div>
-              <div className="text-xs font-sans text-slate mt-1.5">{stat.label}</div>
-            </div>
-          ))}
         </motion.div>
       </div>
 

@@ -66,6 +66,7 @@ interface ClientData {
   accentColor: string;
   accentBg: string;
   accentBorder: string;
+  hasRoas?: boolean;
 }
 
 interface BarProps {
@@ -118,7 +119,7 @@ const clientA: ClientData = {
     { metric: "4.73x",  label: "Top PMax ROAS",   note: "+84% above PMax avg (2.57x)" },
     { metric: "26.3%",  label: "Brand Search CTR", note: "20x apparel avg (1.26%)" },
   ],
-  overview: "A curated streetwear and lifestyle boutique carrying premium athletic and independent labels across footwear, apparel, and accessories. Competing against Nike.com, SSENSE, END Clothing, and national DTC retailers on Google Shopping the goal was to architect a profitable paid search program on a sub-$15K/month budget while defending branded queries and expanding into high-intent product categories.",
+  overview: "A curated streetwear and lifestyle boutique carrying premium athletic and independent labels across footwear, apparel, and accessories. Competing against Nike.com, SSENSE, END Clothing, and national DTC retailers on Google Shopping. The goal was to architect a profitable paid search program on a sub-$15K/month budget while defending branded queries and expanding into high-intent product categories.",
   evolution: {
     title: "Account Architecture Evolution",
     phases: [
@@ -180,7 +181,7 @@ const clientA: ClientData = {
     pillars: [
       {
         name: "Brand Query Isolation",
-        detail: "Branded Search campaign captures all exact-match brand terms at 26.3% CTR. This prevents PMax from cannibalizing high-intent branded traffic a common PMax failure point where branded queries inflate PMax ROAS while starving the rest of the account.",
+        detail: "Branded Search campaign captures all exact-match brand terms at 26.3% CTR. This prevents PMax from cannibalizing high-intent branded traffic. PMax inflating ROAS on branded queries while starving the rest of the account is a common failure point. Isolation fixes it.",
         impact: "Freed PMax to focus on non-branded product discovery while maintaining a reliable branded conversion floor.",
       },
       {
@@ -203,7 +204,7 @@ const clientA: ClientData = {
     { metric: "CPA",        client: "$38.73", industry: "$27.52 → rising +23% YoY",  delta: "Stable while industry CPA surged", positive: true },
     { metric: "Brand CTR",  client: "26.3%",  industry: "1.26% category avg",        delta: "20.9x category average",        positive: true },
   ],
-  insight: "This account tells the story of disciplined evolution: from 5 overlapping Smart Shopping campaigns in 2020 to a purpose-built 5-tier PMax architecture generating 4.13x ROAS. The brand-specific PMax segmentation proves that audience signal precision matters more than budget a $314 micro-campaign delivered 4.54x ROAS by matching product-level search themes to high-intent brand shoppers.",
+  insight: "Five overlapping Smart Shopping campaigns in 2020. A purpose-built five-tier PMax architecture in 2025. The result: 4.13x blended ROAS. The brand-specific PMax delivered 4.54x ROAS on a $314 budget because audience signal precision outperforms raw spend every time.",
   campaigns: [
     { name: "PMax Primary Shopping", impressions: 877833, clicks: 10545, cost: 7890, conversions: 177, roas: 3.88, ctr: 1.20, aov: 170.19 },
     { name: "PMax Sales Tier",        impressions: 716875, clicks: 10660, cost: 5038, conversions: 156, roas: 4.73, ctr: 1.49, aov: 153.28 },
@@ -310,7 +311,7 @@ const clientB: ClientData = {
     { metric: "Conquest CPA",   client: "$33.65", industry: "$27.52 median (↑23% YoY)", delta: "Competitive on conquest traffic", positive: true },
     { metric: "Brand CTR",      client: "23.4%",  industry: "1.26% category avg",       delta: "18.5x category average",       positive: true },
   ],
-  insight: "The competitive conquest PMax is the case study within the case study: by replacing traditional keyword-level competitor bidding with audience-signal-based conquest through PMax, we converted rival brand shoppers at 5.89x ROAS in a year where industry-wide ROAS dropped 10%. The women's expansion proves that product-level PMax segmentation can open entirely new addressable markets at scale (1.3M impressions) without sacrificing efficiency (5.46x ROAS).",
+  insight: "Replacing keyword-based competitor bidding with audience-signal conquest through PMax delivered 5.89x ROAS in a year when industry ROAS dropped 10%. The women's expansion is equally clear: a market the brand had never pursued, opened with PMax segmentation, now running 1.3M impressions at 5.46x ROAS.",
   campaigns: [
     { name: "PMax Women's Expansion",    impressions: 1305102, clicks: 14965, cost: 8149, conversions: 226, roas: 5.46, ctr: 1.15, aov: 196.70 },
     { name: "Shopping Catch-All",        impressions: 866951,  clicks: 11037, cost: 5982, conversions: 146, roas: 4.94, ctr: 1.27, aov: 202.36 },
@@ -320,6 +321,174 @@ const clientB: ClientData = {
   accentColor: "#6ea4c9",
   accentBg: "rgba(110,164,201,0.06)",
   accentBorder: "rgba(110,164,201,0.25)",
+};
+
+const clientC: ClientData = {
+  name: "Client C",
+  vertical: "Design Services",
+  tagline: "Boutique Design Studio Midwest US",
+  heroStats: [
+    { metric: "5.54x",  label: "Blended ROAS",  note: "+51% above industry median" },
+    { metric: "6.16x",  label: "Search ROAS",   note: "+19% above Search avg" },
+    { metric: "36.6%",  label: "Search CTR",    note: "29x apparel avg (1.26%)" },
+    { metric: "134",    label: "Conversions",   note: "On $1.5K total spend" },
+  ],
+  overview: "Boutique design studio with a $1,519/month budget. Three campaigns, each with a defined job: Search for high-intent lead capture, PMax for brand awareness, Shopping for product visibility. Search runs at exact and phrase match only. No broad. No waste. CPA sits at $11.34 while the fashion industry median rises past $27.52 and climbing.",
+  evolution: {
+    title: "Account Architecture",
+    phases: [
+      {
+        era: "Current",
+        label: "Tripartite Structure",
+        campaigns: "Search Core + PMax Branding + Shopping Best-Sellers",
+        structure: "Three non-overlapping campaigns, each with a single role. Search captures high-intent queries. PMax builds brand awareness that feeds Search over time. Shopping drives product visibility at minimal spend. Budget: $1,519/month total.",
+        limitation: "Search delivers 107 of 134 account conversions at 6.16x ROAS. Every dollar allocated to a campaign has a specific job. None overlap.",
+      },
+    ],
+  },
+  productStrategy: {
+    title: "Campaign Segmentation",
+    segments: [
+      {
+        category: "Search, Core (High-Intent Lead Capture)",
+        approach: "Exact and phrase match only. No broad match. Every query is from a prospect actively searching for design services. Budget: $1,130/month.",
+        result: "36.6% CTR / 6.16x ROAS / 107 conversions — 80% of all account conversions",
+        roas: 6.16,
+      },
+      {
+        category: "PMax, Branding (Awareness Layer)",
+        approach: "Broad awareness across Search, Display, and YouTube. Exists to put the brand name in front of people who later convert through Search. Measured on assisted conversion value, not last-click ROAS.",
+        result: "3.52x ROAS / 21 conversions / 27K impressions",
+        roas: 3.52,
+      },
+      {
+        category: "Shopping, Best-Sellers (Product Visibility)",
+        approach: "$97/month. Best-selling products only. Incremental revenue at positive ROAS, feeds brand halo, minimal management overhead.",
+        result: "4.42x ROAS / 6 conversions on $97 spend",
+        roas: 4.42,
+      },
+    ],
+  },
+  keywordStrategy: {
+    title: "Match Type Discipline",
+    narrative: "The 36.6% Search CTR comes from one decision: exact and phrase match only. No broad match. Most small-budget accounts run broad or broad match modified and burn 30–40% of spend on irrelevant queries. Removing broad match from Search is not a tactic. It is the strategy.",
+    pillars: [
+      {
+        name: "Exact and Phrase Match Only",
+        detail: "Every keyword in Search Core is exact or phrase match. Search term reports show near-zero wasted impressions. This is why CTR is 36.6% and CPA is $11.34 when the industry median is $27.52.",
+        impact: "107 conversions at $10.56 CPA from Search alone. Industry fashion CPA is $27.52 and rising 23% year over year.",
+      },
+      {
+        name: "PMax as Awareness Feed, Not Closer",
+        detail: "The PMax Branding campaign is not responsible for closing conversions. Its job is to create brand recognition that makes Search more efficient over time. The 3.52x ROAS is a positive result, not the primary metric.",
+        impact: "27K brand impressions per month at zero cannibalization of Search budget.",
+      },
+    ],
+  },
+  yoyComparisons: [
+    { metric: "Blended ROAS",  client: "5.54x",   industry: "3.68x (↓10% YoY)",           delta: "+51% above declining median",  positive: true },
+    { metric: "Search ROAS",   client: "6.16x",   industry: "5.17x avg",                   delta: "+19% above Search avg",        positive: true },
+    { metric: "Search CTR",    client: "36.6%",   industry: "6.77% apparel avg",            delta: "5.4x category average",        positive: true },
+    { metric: "Shopping ROAS", client: "4.42x",   industry: "2.87x ecom avg",              delta: "+54% above ecommerce avg",     positive: true },
+    { metric: "CPA",           client: "$11.34",  industry: "$27.52 fashion avg (↑23% YoY)", delta: "−59% below rising median",   positive: true },
+  ],
+  insight: "You do not need a big budget. You need a clean one. $1,519 per month, 134 conversions, $11.34 CPA. The Search CTR tells you everything: when the targeting is right, the math works at any spend level.",
+  campaigns: [
+    { name: "Search, Core",            impressions: 5637,  clicks: 2065, cost: 1130, conversions: 107, roas: 6.16, ctr: 36.63, aov: 0 },
+    { name: "PMax, Branding",          impressions: 26990, clicks: 560,  cost: 292,  conversions: 21,  roas: 3.52, ctr: 2.07,  aov: 0 },
+    { name: "Shopping, Best-Sellers",  impressions: 11345, clicks: 229,  cost: 97,   conversions: 6,   roas: 4.42, ctr: 2.02,  aov: 0 },
+  ],
+  accentColor: "#9b8fdb",
+  accentBg: "rgba(155,143,219,0.06)",
+  accentBorder: "rgba(155,143,219,0.25)",
+};
+
+const clientD: ClientData = {
+  name: "Client D",
+  vertical: "Non-Profit / Ad Grant",
+  tagline: "Independent Cinema Northeast US",
+  heroStats: [
+    { metric: "966",    label: "Conversions",    note: "Zero real ad spend" },
+    { metric: "16.9%",  label: "Blended CTR",   note: "3.4x Grant minimum (5%)" },
+    { metric: "1,735",  label: "Clicks",         note: "Ticket awareness and signups" },
+    { metric: "$0",     label: "Out-of-Pocket",  note: "$10K Grant fully utilized" },
+  ],
+  overview: "Independent cinema running on the Google Ad Grant: $10K/month in free ad credits for qualifying non-profits. Most Grant accounts waste the budget or get suspended for falling below the 5% CTR minimum. This one runs at 16.9% CTR, 3.4x the compliance floor, with 966 monthly conversions across ticket interest, event signups, and tourism traffic. Real ad spend: zero.",
+  evolution: {
+    title: "Grant Account Architecture",
+    phases: [
+      {
+        era: "Grant Setup",
+        label: "Compliance-First Foundation",
+        campaigns: "Branded + event-based Search campaigns",
+        structure: "Most Grant accounts launch with broad, undifferentiated campaigns and fail CTR compliance within 90 days. This account was built compliance-first: high-intent, mission-aligned keywords only. No informational queries that inflate impressions without clicks.",
+        limitation: "Grant compliance requires 5% blended CTR minimum. Suspension is automatic below the threshold. Most managers do not architect for this.",
+      },
+      {
+        era: "Current",
+        label: "Three-PMax Architecture",
+        campaigns: "PMax Branding + PMax Film Series + PMax Tourism",
+        structure: "Three PMax campaigns, each targeting a distinct audience intent. Branding drives core ticket awareness and event discovery. Film Series captures programming-specific audiences. Tourism finds out-of-area visitors searching for cultural activities.",
+        limitation: "Account-wide CTR: 16.9%. Grant minimum: 5%. Suspension risk: none.",
+      },
+    ],
+  },
+  productStrategy: {
+    title: "Campaign Segmentation by Audience Intent",
+    segments: [
+      {
+        category: "PMax, Branding (Core Ticket Awareness)",
+        approach: "Covers the central mission: ticket awareness, event discovery, program information. Audience signals built from past site visitors and in-market entertainment segments. Runs across Search, Display, and YouTube.",
+        result: "23.4% CTR / 661 conversions / 1,036 clicks — 68% of all account conversions",
+        roas: 0,
+      },
+      {
+        category: "PMax, Film Series (Programming-Specific Audiences)",
+        approach: "Dedicated campaign targeting genre-specific audiences: documentary fans, indie film enthusiasts, horror screening audiences. Upcoming screenings form the basis for asset groups. Audience signals built from relevant interest and affinity segments.",
+        result: "14.77% CTR / 145 conversions from niche programming audiences",
+        roas: 0,
+      },
+      {
+        category: "PMax, Tourism (Out-of-Area Visitors)",
+        approach: "Targets people searching for cultural activities who are not local. Custom segments built from cultural tourism and travel + entertainment queries. Captures an audience the venue cannot reach through organic or local channels.",
+        result: "9.39% CTR / 160 conversions from visitors who had never heard of the venue",
+        roas: 0,
+      },
+    ],
+  },
+  keywordStrategy: {
+    title: "Grant Compliance and Audience Architecture",
+    narrative: "Google Grant accounts live and die by CTR. A blended CTR below 5% triggers automatic suspension. Most accounts fail because they bid on broad, awareness-oriented keywords that generate impressions without clicks. The fix is simple: only bid on queries where the searcher has a clear reason to click.",
+    pillars: [
+      {
+        name: "Compliance Architecture",
+        detail: "Every campaign in this account is built around high-intent, mission-relevant queries. Informational queries (e.g., what is an art house cinema) are excluded. The account bids on action-oriented queries: showtimes, tickets, specific screenings, venue information.",
+        impact: "16.9% blended CTR. Grant minimum is 5%. The account is 3.4x above the threshold with no suspension risk.",
+      },
+      {
+        name: "Audience Signal Segmentation",
+        detail: "Three separate PMax campaigns with distinct audience signals ensure each campaign's traffic matches its specific goal. Branding runs on broad cultural and entertainment signals. Film Series runs on genre-specific signals. Tourism runs on cultural travel signals. No audience bleed between campaigns.",
+        impact: "Each campaign's CTR reflects its specific audience match quality. PMax Branding runs at 23.4% CTR, 11.3x the PMax platform average.",
+      },
+    ],
+  },
+  yoyComparisons: [
+    { metric: "CTR",               client: "16.9%",  industry: "5% Grant minimum",     delta: "3.4x compliance threshold",  positive: true },
+    { metric: "PMax Branding CTR", client: "23.4%",  industry: "2.07% PMax avg",        delta: "11.3x platform average",     positive: true },
+    { metric: "Conversions",       client: "966",    industry: "On zero real spend",    delta: "Full Grant utilized",        positive: true },
+    { metric: "Total Clicks",      client: "1,735",  industry: "$0 out-of-pocket cost", delta: "100% grant efficiency",      positive: true },
+    { metric: "Suspension Risk",   client: "None",   industry: "5% CTR threshold",      delta: "3.4x above minimum",         positive: true },
+  ],
+  insight: "Most non-profits treat the Google Grant as an afterthought. They spend 20% of the budget and live in constant suspension risk. This account uses all of it, converts nearly 1,000 actions per month, and runs at triple the CTR floor. Grant management is a real discipline when you treat it like one.",
+  campaigns: [
+    { name: "PMax, Branding",     impressions: 4431, clicks: 1036, cost: 0, conversions: 661, roas: 0, ctr: 23.38, aov: 0 },
+    { name: "PMax, Film Series",  impressions: 2763, clicks: 408,  cost: 0, conversions: 145, roas: 0, ctr: 14.77, aov: 0 },
+    { name: "PMax, Tourism",      impressions: 3100, clicks: 291,  cost: 0, conversions: 160, roas: 0, ctr: 9.39,  aov: 0 },
+  ],
+  accentColor: "#db8f8f",
+  accentBg: "rgba(219,143,143,0.06)",
+  accentBorder: "rgba(219,143,143,0.25)",
+  hasRoas: false,
 };
 
 /*──────────────────────────────────────────────────────────────────
@@ -490,9 +659,11 @@ function CaseStudy({ data }: { data: ClientData }) {
     );
   }
 
-  // Find non-branded CTR (exclude very high brand CTR values)
-  const nonBrandCTR =
-    data.campaigns.find((c) => c.ctr < 5)?.ctr ?? 1.3;
+  // Find non-branded CTR (exclude very high brand CTR values for ecom accounts)
+  // For grant accounts, use blended CTR from heroStats
+  const nonBrandCTR = data.hasRoas === false
+    ? parseFloat(data.heroStats[1].metric)
+    : (data.campaigns.find((c) => c.ctr < 5)?.ctr ?? 1.3);
 
   return (
     <div
@@ -738,25 +909,29 @@ function CaseStudy({ data }: { data: ClientData }) {
       {/* BENCHMARK BARS */}
       <div style={{ marginBottom: 36 }}>
         <SectionLabel>Performance vs. Benchmarks (Visual)</SectionLabel>
-        <Bar
-          value={parseFloat(data.heroStats[0].metric)}
-          benchmark={BENCHMARKS.googleROAS.val}
-          label="Blended ROAS"
-          benchmarkLabel="Industry"
-          unit="x"
-        />
-        <Bar
-          value={data.campaigns.reduce((best, c) => Math.max(best, c.roas), 0)}
-          benchmark={BENCHMARKS.pmaxROAS.val}
-          label="Top Campaign ROAS"
-          benchmarkLabel="PMax Avg"
-          unit="x"
-        />
+        {data.hasRoas !== false && (
+          <>
+            <Bar
+              value={parseFloat(data.heroStats[0].metric)}
+              benchmark={BENCHMARKS.googleROAS.val}
+              label="Blended ROAS"
+              benchmarkLabel="Industry"
+              unit="x"
+            />
+            <Bar
+              value={data.campaigns.reduce((best, c) => Math.max(best, c.roas), 0)}
+              benchmark={BENCHMARKS.pmaxROAS.val}
+              label="Top Campaign ROAS"
+              benchmarkLabel="PMax Avg"
+              unit="x"
+            />
+          </>
+        )}
         <Bar
           value={nonBrandCTR}
-          benchmark={BENCHMARKS.apparelCTR.val}
-          label="Non-Brand CTR"
-          benchmarkLabel="Apparel Avg"
+          benchmark={data.hasRoas !== false ? BENCHMARKS.apparelCTR.val : 5}
+          label={data.hasRoas !== false ? "Non-Brand CTR" : "Blended CTR"}
+          benchmarkLabel={data.hasRoas !== false ? "Apparel Avg" : "Grant Min"}
           unit="%"
         />
       </div>
@@ -980,10 +1155,10 @@ function CaseStudy({ data }: { data: ClientData }) {
                     {c.conversions}
                   </td>
                   <td style={{ padding: "10px 10px", textAlign: "right", fontFamily: mono, fontSize: 10, fontWeight: 700, color: "#8efa9e" }}>
-                    {c.roas.toFixed(2)}x
+                    {c.roas > 0 ? `${c.roas.toFixed(2)}x` : "—"}
                   </td>
                   <td style={{ padding: "10px 10px", textAlign: "right", color: "#777", fontFamily: mono, fontSize: 10 }}>
-                    ${c.aov.toFixed(0)}
+                    {c.aov > 0 ? `$${c.aov.toFixed(0)}` : "—"}
                   </td>
                 </tr>
               ))}
@@ -1068,12 +1243,13 @@ export default function CaseStudies() {
               lineHeight: 1.05,
             }}
           >
-            Fashion &amp; Streetwear Case Studies
+            Paid Search Case Studies
           </h1>
           <p style={{ fontFamily: serif, fontSize: 16, color: "#666", lineHeight: 1.7, margin: 0 }}>
-            Performance Max, Standard Shopping, and Search campaigns for independent fashion
-            retailers. Benchmarked against 2025 industry data with year-over-year trend analysis,
-            product categorization strategy, and keyword architecture deep-dives.
+            Performance Max, Standard Shopping, Search, and Google Ad Grant campaigns across
+            fashion retail, design services, and non-profit. Benchmarked against 2025 industry
+            data with year-over-year trend analysis, product categorization strategy, and keyword
+            architecture deep-dives.
           </p>
         </div>
 
